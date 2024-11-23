@@ -107,7 +107,10 @@ footer a { text-decoration: none; padding: 6px; }
 
 /*for mobile*/
 @media screen and (max-width: 600px) {
-  html { font-size: 3vw; }
+  /*html { font-size: 3vw; }*/
   .content input { width: 80vw; }
   nav li { width: 25%; }
+  .content input, textarea { width: 300px; }
+  .content { height: 65vh; }
+  /*.content label { font-size: 16px; }*/
 }
