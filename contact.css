@@ -46,6 +46,56 @@ body {
   z-index: 1;
 }
 
+.alert {
+  background: rgb(44, 39, 161);
+  padding: 10px 40px;
+  min-width: 320px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  overflow: hidden;
+  border-radius: 6px;
+  border-left: 8px solid #a1daf9;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.alert.showAlert { opacity: 1; pointer-events: auto; }
+
+.alert.show { animation: show_slide 1s ease forwards; }
+
+@keyframes show_slide {
+  0% { transform: translateX(100%); }
+  
+  40% { transform: translateX(-10%); }
+  
+  80% { transform: translateX(0%); }
+  
+  100% { transform: translateX(-10px); }
+}
+
+.alert.hide { animation: hide_slide 1s ease forwards; }
+
+@keyframes hide_slide {
+  0% { transform: translateX(-10px); }
+  
+  40% { transform: translateX(0%); }
+  
+  80% { transform: translateX(-10%); }
+  
+  100% { transform: translateX(100%); }
+}
+
+.alert .circle-exclamation { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); width: 20px; }
+
+.alert .msg { padding: 0 20px; font-size: 18px; /* color: #ce8500; */ }
+
+.alert .close-btn { position: absolute; right: 0px; top: 50%; transform: translateY(-50%); background: rgb(44, 39, 161); padding: 20px 18px; border-radius: 0 6px 6px 0; }
+
+.close-btn:hover { background: #a1daf9; }
+
+.close-btn .xmark { line-height: 40px; width: 10px; }
+
 a { color: #a1daf9; cursor: none; }
 
 a:visited { color: #a690d4; }
@@ -59,7 +109,7 @@ form input, textarea {
   text-shadow: 0px 0px 3px #a1daf9, 0px 0px 5px #0000FF; 
   color: #a1daf9;
   background-color: rgba(177, 197, 240, 0.5);
-  font-size: 16px;
+  font-size: 16px; 
 }
 
 .content { height: 80vh; display: flex; align-items: center; justify-content: space-evenly; }
@@ -98,6 +148,10 @@ footer { text-align: center; background-color: rgba(161, 218, 249, 0.3); width: 
 
 footer a { text-decoration: none; padding: 6px; }
 
+footer img { width: 40px; height: 40px; }
+
+footer img:hover { transform: translateY(-10px); }
+
 #contact-link-wrapper { margin: 1em; }
 
 /*for tablets*/
@@ -107,10 +161,8 @@ footer a { text-decoration: none; padding: 6px; }
 
 /*for mobile*/
 @media screen and (max-width: 600px) {
-  /*html { font-size: 3vw; }*/
   .content input { width: 80vw; }
   nav li { width: 25%; }
   .content input, textarea { width: 300px; }
   .content { height: 65vh; }
-  /*.content label { font-size: 16px; }*/
 }
