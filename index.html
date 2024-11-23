@@ -6,23 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Ciera</title>
     <link href="contact.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   </head>
   
   <body>
     <div class="cursor"></div>
+    
+    <div class="alert">
+      <img class="circle-exclamation" src="circle-exclamation-solid.png"/>
+      <span class="msg">Message sent successfully!</span>
+      <span class="close-btn">
+        <img class="xmark" src="xmark-solid.png"/>
+      </span>
+    </div>
   
     <header>
       <h1>Contact Ciera</h1>
       <nav>
-				<ul>
-					<li><a class="nav-link" href="https://cbaucham.neocities.org/">Home</a></li>
-					<li><a class="nav-link" href="https://cbaucham.neocities.org/about">About</a></li>
-          <li><a class="nav-link" href="https://cbaucham.neocities.org/projects">Projects</a></li>
-					<li><a class="nav-link" href="https://cbaucham.neocities.org/artblog">Art Blog</a></li>
-					<li><a class="nav-link" href="https://cbaucham.neocities.org/games">Games</a></li>
-					<li><a class="nav-link" href="https://queencee48.github.io/">Contact</a></li>
-				</ul>
-			</nav>
+	<ul>
+	  <li><a class="nav-link" href="https://cbaucham.neocities.org/">Home</a></li>
+	  <li><a class="nav-link" href="https://cbaucham.neocities.org/about">About</a></li>
+	  <li><a class="nav-link" href="https://cbaucham.neocities.org/projects">Projects</a></li>
+	  <li><a class="nav-link" href="https://cbaucham.neocities.org/artblog">Art Blog</a></li>
+	  <li><a class="nav-link" href="https://cbaucham.neocities.org/games">Games</a></li>
+	  <li><a class="nav-link" href="https://queencee48.github.io/">Contact</a></li>
+	</ul>
+      </nav>
     </header>
     
     <hr/>
@@ -31,7 +40,6 @@
       <div class="content">
       
         <form id="contactForm" class="contact-form" action="https://formspree.io/f/mnnqzkoz" method="POST">
-          <!--<h2>Contact Me</h2>-->
           
           <div class="form-group">
             <label for="name">Name:</label>
@@ -60,16 +68,18 @@
     
     <footer id="contact-section">
     
-			<!--<h2>Contact</h2>-->
-			<div id="contact-link-wrapper">
+      <div id="contact-link-wrapper">
         <a target="_blank" href="https://www.codedex.io/@QueenCee48" >
-            <img id="codedex" alt="Codédex Icon" src="https://lh3.googleusercontent.com/pw/AP1GczNXkXQx20oqz_wlbW07CuFS7NJSmoVb3a5ahppS53xGEjqaa74ksYdvdMIAru2bd6JLNyEzo50B350lwVVFWZI1_9-zSFLO76oD9pFs11VJRT0rl1A=w40-h40-p-k" />
+            <img id="codedex" alt="Codédex Icon" src="codedex.png" />
         </a>
         <a target="_blank" href="https://github.com/QueenCee48" >
-            <img id="github" alt="GitHub Icon" src="https://lh3.googleusercontent.com/pw/AP1GczP6QG-Ml5rJBMBkYbRoedq_eIHVFX89Lw9HfOkPgMkR3Y5LBMObpkb_OGoiRSHtR4ohCmXYR_xFnlohoPp5_g-81xqTSZMA_Q_w9yIFuTHbRgbNVG0=s40-p-k" />
+            <img id="github" alt="GitHub Icon" src="github.png" />
         </a>
         <a target="_blank" href="https://www.instagram.com/the_artcee_one/" >
-            <img id="instagram" alt="Instagram Icon" src="https://lh3.googleusercontent.com/pw/AP1GczPbr7iJ-ha9sPMX-qBsEQhzgO8qGAzIWKiYa8Lbfuv95ybQeAKgsK6lemMZIEV2JN0PuXgcKIAKGrtSgJom715F3wZEuug-IDVF_DSAvbTvOc1ISiM=s40-p-k" />
+            <img id="instagram" alt="Instagram Icon" src="instagram.png" />
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/cbaucham/" >
+            <img id="linkedin" alt="LinkedIn Icon" src="linkedin.png" />
         </a>
       </div>
       
