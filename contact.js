@@ -32,14 +32,27 @@ form.addEventListener("submit", function(event) {
       form.reset();
       responseMessage.style.display = "block";
     }
-    // else {
-    //   alert("There was a problem with your submission. Please try again.");
-    // }
   })
   
   .catch(error => {
     console.error('Error:', error);
-    alert("Thank you for your message! I will get back to you soon.");
+    
+    $('.alert').removeClass("hide");
+    $('.alert').addClass("show");
+    $('.alert').addClass("showAlert");
+    
+    setTimeout(function(){
+      $('.alert').addClass("hide");
+      $('.alert').removeClass("show");
+      $('.alert').removeClass("showAlert");
+    },5000);
+    
+    $('.close-btn').click(function(){
+      $('.alert').addClass("hide");
+      $('.alert').removeClass("show");
+      $('.alert').removeClass("showAlert");
+    });
+    
     form.reset();
   });
   
