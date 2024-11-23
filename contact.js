@@ -40,6 +40,7 @@ form.addEventListener("submit", function(event) {
   .catch(error => {
     console.error('Error:', error);
     alert("Thank you for your message! I will get back to you soon.");
+    form.reset();
   });
   
 });
