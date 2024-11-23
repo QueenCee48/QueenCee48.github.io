@@ -1,0 +1,106 @@
+* { padding: 0; margin: 0; box-sizing: border-box; }
+
+html { font-family: "Comic Sans MS", "Papyrus", fantasy, "Times New Roman", serif; font-size: 1em; }
+
+h1 { color: #a1daf9; text-shadow: -3px 1px #1b0952; }
+
+header { background-color: rgba(100, 94, 254, 0.5); width: auto; margin: 1.2em; padding: 1em; border-radius: 25px; text-align: center; }
+
+nav li {
+	background-color: rgba(44, 39, 161, 0.8);
+	padding: 8px;
+	margin: 1.3%;
+	width: 12%;
+	border-radius: 14px;
+	list-style-type: none;
+	display: inline-block;
+  text-align: center;
+}
+
+nav li:hover, .content button:hover { background-color: #a1daf9; }
+
+.nav-link { text-decoration: none; }
+
+hr { border: 2px solid #a1daf9; border-radius: 5px; }
+
+body, hr { color: #1b0952; }
+
+body { 
+  background-image: url("https://wallpapers.com/images/hd/seamless-background-3000-x-1500-x7zam0o9zrz2ljx4.jpg"); 
+  background-repeat: repeat-y;
+  text-shadow: 0px 0px 3px #a1daf9, 0px 0px 5px #0000FF; 
+  color: #a1daf9;
+  cursor: none;
+}
+
+.cursor { 
+  width: 1rem;
+  height: 1rem;
+  background-color: rgba(137, 229, 252, 0.8);
+  border: none;
+  border-radius: 50%;
+  box-shadow: rgba(137, 229, 252, 0.8) 1px 1px 8px 4px, rgba(137, 229, 252, 0.8) -1px -1px 8px 4px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+a { color: #a1daf9; cursor: none; }
+
+a:visited { color: #a690d4; }
+
+a:hover, .content button:hover { color:  #6082fc; }
+
+a:focus { color: #8b87fe; }
+
+form input, textarea {
+  font-family: "Comic Sans MS", "Papyrus", fantasy, "Times New Roman", serif !important;
+  text-shadow: 0px 0px 3px #a1daf9, 0px 0px 5px #0000FF; 
+  color: #a1daf9;
+  background-color: rgba(177, 197, 240, 0.5);
+}
+
+.content { height: 80vh; display: flex; align-items: center; justify-content: space-evenly; }
+
+.contact-form { display: flex; flex-direction: column; align-items: start; gap: 20px; }
+
+.content h2 { font-weight: 600; font-size: 40px; margin-bottom: 5px; }
+
+.content input, textarea { width: 400px; height: 50px; border: none; outline: none; padding-left: 25px; font-weight: 500; border-radius: 20px; cursor: none; }
+
+.content textarea { height: 140px; padding-top: 15px; border-radius: 20px; }
+
+.content input:focus, textarea:focus { border: 2px solid #fff; }
+
+.content button { 
+  display: flex; 
+  align-items: center; 
+  padding: 15px 30px; 
+  font-size: 16px; 
+  gap: 10px; 
+  border: none; 
+  background-color: rgba(44, 39, 161, 0.8);
+	border-radius: 14px;
+  text-align: center;
+  cursor: none;
+  font-family: "Comic Sans MS", "Papyrus", fantasy, "Times New Roman", serif;
+  text-shadow: 0px 0px 3px #a1daf9, 0px 0px 5px #0000FF; 
+  color: #a1daf9;
+}
+
+.content button img { height: 15px; }
+
+.content label { display: block; font-weight: bold; margin-bottom: 10px; cursor: none; }
+
+footer { text-align: center; background-color: rgba(161, 218, 249, 0.3); width: auto; padding: 0.2em; border-radius: 25px; margin: 1em; }
+
+footer a { text-decoration: none; padding: 6px; }
+
+#contact-link-wrapper { margin: 1em; }
+
+/*for mobile*/
+@media screen and (max-width: 600px) {
+  html { font-size: 3vw; }
+  .content input { width: 80vw; }
+}
