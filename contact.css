@@ -100,8 +100,14 @@ footer a { text-decoration: none; padding: 6px; }
 
 #contact-link-wrapper { margin: 1em; }
 
+/*for tablets*/
+/*@media screen and (max-width: 900px) and (min-width: 600px) {*/
+  
+/*}*/
+
 /*for mobile*/
 @media screen and (max-width: 600px) {
   html { font-size: 3vw; }
   .content input { width: 80vw; }
+  nav li { width: 25%; }
 }
